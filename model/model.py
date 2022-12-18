@@ -25,7 +25,7 @@ def run(dumped_model, model_name, dump_model_path, max_depth, test_size):
     model = generate_model(dumped_model, model_name, dump_model_path, max_depth)
     X_train, y_train, X_test, y_test = get_train_data(test_size)
     logging.info("Fitting model")
-    model.fit(X_train, y_train)
+    model.fit(X_train, y_train.values.ravel())
     logging.info("Model fitted")
     logging.info("Predicting")
     y_pred = model.predict(X_test)

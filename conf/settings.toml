@@ -4,7 +4,7 @@ SEED = 42
 TEST_SIZE = 0.2
 FEATURES = ['Ship Mode', 'Segment', 'City', 'State', 'Postal Code',
             'Region', 'Category', 'Sub-Category', 'Sales',
-            'Quantity', 'Discount']
+            'Quantity', 'Discount', 'Profit']
 TARGET = 'Profit'
 MODEL = 'linear_regression'
 RF_MAX_DEPTH = 14
