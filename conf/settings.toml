@@ -1,5 +1,4 @@
 DATA_LINK = "https://raw.githubusercontent.com/antsareva/hse_decision_analysis/master/SampleSuperstore.csv"
-PROFIT = 'Profit' # todo: delete
 SEED = 42
 TEST_SIZE = 0.2
 FEATURES = ['Ship Mode', 'Segment', 'City', 'State', 'Postal Code',

@@ -31,10 +31,10 @@ def get_train_data(test_size: int):
     logging.debug(f"Test dataset shape: {test_data_mean.shape}")
 
 
-    X_train_mean = train_data_mean.loc[:, train_data_mean.columns != settings.PROFIT]
-    y_train_mean = train_data_mean.loc[:, train_data_mean.columns == settings.PROFIT]
-    X_test_mean = test_data_mean.loc[:, test_data_mean.columns != settings.PROFIT]
-    y_test_mean = test_data_mean.loc[:, test_data_mean.columns == settings.PROFIT]
+    X_train_mean = train_data_mean.loc[:, train_data_mean.columns != settings.TARGET]
+    y_train_mean = train_data_mean.loc[:, train_data_mean.columns == settings.TARGET]
+    X_test_mean = test_data_mean.loc[:, test_data_mean.columns != settings.TARGET]
+    y_test_mean = test_data_mean.loc[:, test_data_mean.columns == settings.TARGET]
 
     return X_train_mean, y_train_mean, X_test_mean, y_test_mean
 
